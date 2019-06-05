@@ -10,31 +10,29 @@
 	//		"available": true
 	//	}
 	//
-	// colour		: A 6 digit HTML colour code
 	// character	: A character icon, from the list below
 	// name			: The name of the drink
 	// ingredients	: List of ingredients to display
 	// price		: Price of the drink
 	// available	: true, to display the item. false to ignore it
 	//
-	// Below is a list of available character icons, and suggested
-	// colour codes for use with each one:
+	// Below is a list of available character icons.
 	// ----------------------
-	// bugs (#F5812A)
-	// coyote (#E8D3AC)
-	// daffy (#F78628)
-	// elmer (#7C4F26)
-	// foghorn (#BF2E1A)
-	// frog (#1FB25A)
-	// lola (#FFF797)
-	// marvin (#4BA833)
-	// pepe (#6A747C)
-	// porky (#FEE3C5)
-	// roadrunner (#351D7D)
-	// speedy (#D18416)
-	// sylvester (#D31145)
-	// taz (#7A2C28)				
-	// tweety (#FFF700)
+	// bugs
+	// coyote
+	// daffy
+	// elmer
+	// foghorn
+	// frog
+	// lola
+	// marvin
+	// pepe
+	// porky
+	// roadrunner
+	// speedy
+	// sylvester
+	// taz				
+	// tweety
 
 	// If this is set, use the remote file instead
 	// of the contents of this configuration file.
@@ -57,7 +55,17 @@
 		"text_font_bold"			: true,
 		"text_shadow_darkness"		: 40,
 		"text_shadow_size"			: 3,
-		"text_border_size"			: 1
+		"text_border_size"			: 1,
+
+		// Background colours
+		"background": "#73c850",
+		"colours": [
+			"#663399",
+			"#CC0000",
+			"#FFFF00",
+			"#FF6600",
+			"#0000CC"
+		]
 	},
 
 	"images":
@@ -66,7 +74,6 @@
 		// -------- Page 1 --------
 		// ------------------------
 		{
-			"colour": "#F5812A",
 			"character" : "bugs",
 			"name": "Carrot Juice", 
 			"ingredients": "Ginger Beer, Vodka, Carrot Juice, Lime, Angostura Bitters",
@@ -74,7 +81,6 @@
 			"available": true
 		},
 		{
-			"colour": "#FFF797",
 			"character" : "lola",
 			"name": "Pornstar Martini", 
 			"ingredients": "Absolut Vanilia, Passion Fruit Puree, Vanilla Syrup, Pineaple",
@@ -82,7 +88,6 @@
 			"available": true
 		},
 		{
-			"colour": "#E8D3AC",
 			"character": "coyote",
 			"name": "Kentucky Coffee", 
 			"ingredients": "Bourbon, Kahlua, Vanilla Extract, Whipped Cream, Hot Coffee",
@@ -90,7 +95,6 @@
 			"available": true
 		},
 		{
-			"colour": "#1FB25A",
 			"character" : "frog",
 			"name": "Michigan Rag", 
 			"ingredients": "Rum, Club Soda, Sugar, Lime Wedge, Mint Leaves",
@@ -98,10 +102,30 @@
 			"available": true
 		},
 		{
-			"colour": "#7C4F26",
 			"character": "elmer",
 			"name": "Chocolate Wabbit", 
 			"ingredients": "Chocolate Liqueur, Creme de Cacao, Half-and-Half, Vodka",
+			"price": "$2.75",
+			"available": true
+		},
+		{
+			"character": "foghorn",
+			"name": "Strawberry Foghorn", 
+			"ingredients": "Rum, Lime Juice, Simple Syrup, Strawberries",
+			"price": "$2.75",
+			"available": true
+		},
+		{
+			"character" : "pepe",
+			"name": "French 75", 
+			"ingredients": "Gin, Lemon Juice, Simple Syrup, Champagne",
+			"price": "$2.75",
+			"available": true
+		},
+		{
+			"character": "speedy",
+			"name": "Andale Andale!", 
+			"ingredients": "Salt, Cayenne Pepper, Lime Juice, Worcestershire, Tabasco, Celery Salt, Mexican Lager",
 			"price": "$2.75",
 			"available": true
 		},
@@ -110,31 +134,6 @@
 		// -------- Page 2 --------
 		// ------------------------
 		{
-			"colour": "#BF2E1A",
-			"character": "foghorn",
-			"name": "Strawberry Foghorn", 
-			"ingredients": "Rum, Lime Juice, Simple Syrup, Strawberries",
-			"price": "$2.75",
-			"available": true
-		},
-		{
-			"colour": "#6A747C",
-			"character" : "pepe",
-			"name": "French 75", 
-			"ingredients": "Gin, Lemon Juice, Simple Syrup, Champagne",
-			"price": "$2.75",
-			"available": true
-		},
-		{
-			"colour": "#D18416",
-			"character": "speedy",
-			"name": "Andale Andale!", 
-			"ingredients": "Salt, Cayenne Pepper, Lime Juice, Worcestershire, Tabasco, Celery Salt, Mexican Lager",
-			"price": "$2.75",
-			"available": true
-		},
-		{
-			"colour": "#351D7D",
 			"character": "roadrunner",
 			"name": "Blueberry Speedster", 
 			"ingredients": "Ginger Beer, Whiskey, Sugar, Lemon Wedge, Blueberries",
@@ -142,19 +141,13 @@
 			"available": true
 		},
 		{
-			"colour": "#FEE3C5",
 			"character" : "porky",
 			"name": "Pineaple Porky", 
 			"ingredients": "Vodka, Blue Curacao, Coconut Syrup, Pineaple Juice, Cherry",
 			"price": "$2.75",
 			"available": true
 		},
-
-		// ------------------------
-		// -------- Page 3 --------
-		// ------------------------
 		{
-			"colour": "#D31145",
 			"character": "sylvester",
 			"name": "Raspberry Sukatash", 
 			"ingredients": "Gin, Simple Syrup, Lemon Juice, Club Soda, Raspberries",
@@ -162,7 +155,6 @@
 			"available": true
 		},
 		{
-			"colour": "#F78628",
 			"character": "daffy",
 			"name": "Orange you glad it's Duck Season", 
 			"ingredients": "Gin, Sweet Vermouth, Orange Juice",
@@ -170,7 +162,6 @@
 			"available": true
 		},
 		{
-			"colour": "#4BA833",
 			"character": "marvin",
 			"name": "Martian Marshmallow", 
 			"ingredients": "Vodka, Amaretto Liqueur, Simple Syrup, Lemon Juice, Marshmallow Fluff, Crushed Graham Cracker",
@@ -178,7 +169,6 @@
 			"available": true
 		},
 		{
-			"colour": "#7A2C28",
 			"character" : "taz",
 			"name": "Cinnamon Twister", 
 			"ingredients": "Club Soda, Bitters, Apple Butter, Bourbon, Cinnamon Stick, Sugar Cube",
@@ -186,7 +176,6 @@
 			"available": true
 		},
 		{
-			"colour": "#FFF700",
 			"character": "tweety",
 			"name": "Lemon Tweet", 
 			"ingredients": "Vodka, Triple Sec, Lemon Juice, Lime Wedge",
