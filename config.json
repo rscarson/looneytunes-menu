@@ -1,8 +1,10 @@
 {	
+	// Menu Board main configuration
+	// Copyright Richard Carson
+	//
 	// The images section below should consist of comma separated
 	// menu entries with the following template:
 	//	{
-	//		"colour": "#FFFFFF",
 	//		"character" : "bugs",
 	//		"name": "Carrot Juice", 
 	//		"ingredients": "Ginger Beer, Vodka, Carrot Juice, Lime, Angostura Bitters",
@@ -16,38 +18,26 @@
 	// price		: Price of the drink
 	// available	: true, to display the item. false to ignore it
 	//
-	// Below is a list of available character icons.
+	// Below is a list of available character icons:
 	// ----------------------
-	// bugs
-	// coyote
-	// daffy
-	// elmer
-	// foghorn
-	// frog
-	// lola
-	// marvin
-	// pepe
-	// porky
-	// roadrunner
-	// speedy
-	// sylvester
-	// taz				
-	// tweety
+	// bugs, coyote, daffy, elmer, foghorn, frog, lola, marvin,
+	// pepe, porky, roadrunner, speedy, sylvester, taz, tweety
 
 	// If this is set, use the remote file instead
 	// of the contents of this configuration file.
+	// Allows you to edit the configuration online.
 	// Remove the Double slashes to enable it.
 	// "remote_config": "https://pastebin.com/raw/NJZqj7SG",
 
 	"configuration": {
 		// General options
 		"image_directory"			: "logos_1080p",
-		"screen_resolution"			: [900, 720],
+		"screen_resolution"			: [900, 1440],
 		"image_padding_size"		: 10,
 
 		// Page options
 		"page_change_interval_ms"	: 5000,
-		"items_per_page"			: 5,
+		"items_per_page"			: 8,
 
 		// Text options
 		"text_font_sizes"			: [28, 16, 16],

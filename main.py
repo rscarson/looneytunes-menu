@@ -1,8 +1,11 @@
-# # # # Requirements # # # #
-# Displays a menu board on
-# paginated rotation
-# - pillow
-# - tkinter
+###############################################
+# Displays a menu board                       #
+# Copyright Richard Carson, 2019              #
+###############################################
+# Requirements:                               #
+# - pillow: `pip install Pillow`              #
+# - tkinter: `sudo apt-get install python-tk` #
+###############################################
 from PIL import ImageTk,Image
 import urllib2
 import Tkinter
@@ -35,6 +38,7 @@ def modify_colour(colour, adjustment):
 
 class MenuBoard:
 	def __init__(self, config_filename):
+		""" Create the canvas, load the configuration """
 		self.page = 0
 		self.images = []
 
