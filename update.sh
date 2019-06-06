@@ -3,4 +3,4 @@
 # Update from the git repository #
 # Copyright Richard Carson, 2019 #
 ##################################
-git pull
+git pull origin master

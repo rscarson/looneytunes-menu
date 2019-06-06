@@ -27,7 +27,7 @@
 	// of the contents of this configuration file.
 	// Allows you to edit the configuration online.
 	// Remove the Double slashes to enable it.
-	// "remote_config": "https://raw.githubusercontent.com/rscarson/looneytunes-menu/master/config.json?token=AAH5CKHVUPEVJSPH2ECQCLC47AJ2W",
+	// "remote_config": "",
 
 	"configuration": {
 		// General options
