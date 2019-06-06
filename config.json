@@ -27,12 +27,12 @@
 	// of the contents of this configuration file.
 	// Allows you to edit the configuration online.
 	// Remove the Double slashes to enable it.
-	// "remote_config": "https://pastebin.com/raw/NJZqj7SG",
+	// "remote_config": "https://raw.githubusercontent.com/rscarson/looneytunes-menu/master/config.json?token=AAH5CKHVUPEVJSPH2ECQCLC47AJ2W",
 
 	"configuration": {
 		// General options
 		"image_directory"			: "logos_1080p",
-		"screen_resolution"			: [900, 1440],
+		"screen_resolution"			: [1080, 1920],
 		"image_padding_size"		: 10,
 
 		// Page options
