@@ -4,7 +4,7 @@ Displays a themed menu
 ## Installation
 ### Install requirements
 - pillow: `pip install Pillow`
-- tkinter: `sudo apt-get install python-tk`
+- tkinter: `sudo apt-get install python-tk python-imaging-tk`
 ### Clone repository
     git clone https://github.com/rscarson/looneytunes-menu.git
 ### Configure and start

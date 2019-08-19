@@ -37,6 +37,7 @@
 
 		// Page options
 		"page_change_interval_ms"	: 5000,
+		"config_reload_interval_ms"	: 180000,
 		"items_per_page"			: 8,
 
 		// Text options

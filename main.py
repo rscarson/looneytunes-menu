@@ -41,9 +41,20 @@ class MenuBoard:
 		""" Create the canvas, load the configuration """
 		self.page = 0
 		self.images = []
+		self.config_filename = config_filename
 
 		# Load configuration
-		with codecs.open(config_filename, 'r', encoding='utf8') as f:
+		self.reload_config()
+
+		# Prepare the canvas
+		self.root = Tkinter.Tk()
+		self.root.attributes("-fullscreen", True)
+		self.canvas = Tkinter.Canvas(self.root, bd=0, highlightthickness=0, background=self.options['background'])
+		self.canvas.pack(fill=Tkinter.BOTH, expand=1)
+
+	def reload_config(self):
+		""" Load configuration """
+		with codecs.open(self.config_filename, 'r', encoding='utf8') as f:
 			config = load_json(f.read())
 			if 'remote_config' in config.keys():
 				try:
@@ -55,12 +66,8 @@ class MenuBoard:
 			self.options = config['configuration']
 			images = [i for i in config['images'] if i['available']]
 			self.pages = paginate(images, self.options['items_per_page'])
+		self.root.after(self.options['config_reload_interval_ms'], lambda: self.reload_config())
 
-		# Prepare the canvas
-		self.root = Tkinter.Tk()
-		self.root.attributes("-fullscreen", True)
-		self.canvas = Tkinter.Canvas(self.root, bd=0, highlightthickness=0, background=self.options['background'])
-		self.canvas.pack(fill=Tkinter.BOTH, expand=1)
 
 	def start(self):
 		""" Start the main loop """
