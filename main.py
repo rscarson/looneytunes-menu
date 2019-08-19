@@ -44,10 +44,10 @@ class MenuBoard:
 		self.config_filename = config_filename
 
 		# Load configuration
+		self.root = Tkinter.Tk()
 		self.reload_config()
 
 		# Prepare the canvas
-		self.root = Tkinter.Tk()
 		self.root.attributes("-fullscreen", True)
 		self.canvas = Tkinter.Canvas(self.root, bd=0, highlightthickness=0, background=self.options['background'])
 		self.canvas.pack(fill=Tkinter.BOTH, expand=1)
@@ -60,9 +60,9 @@ class MenuBoard:
 				try:
 					config = urllib2.urlopen(config['remote_config']).read()
 					config = load_json(config)
-				except urllib2.URLError:
-					print "Error loading target URL... Stopping"
-					quit()
+				except:
+					print "Error loading target URL... Using local config"
+					config = load_json(f.read())
 			self.options = config['configuration']
 			images = [i for i in config['images'] if i['available']]
 			self.pages = paginate(images, self.options['items_per_page'])
