@@ -1,46 +1,46 @@
 {	
-	// Menu Board main configuration
-	// Copyright Richard Carson
-	//
-	// The images section below should consist of comma separated
-	// menu entries with the following template:
-	//	{
-	//		"character" : "bugs",
-	//		"name": "Carrot Juice", 
-	//		"ingredients": "Ginger Beer, Vodka, Carrot Juice, Lime, Angostura Bitters",
-	//		"price": "$2.75",
-	//		"available": true
-	//	}
-	//
-	// character	: A character icon, from the list below
-	// name			: The name of the drink
-	// ingredients	: List of ingredients to display
-	// price		: Price of the drink
-	// available	: true, to display the item. false to ignore it
-	//
-	// Below is a list of available character icons:
-	// ----------------------
-	// bugs, coyote, daffy, elmer, foghorn, frog, lola, marvin,
-	// pepe, porky, roadrunner, speedy, sylvester, taz, tweety
+	# Menu Board main configuration
+	# Copyright Richard Carson
+	#
+	# The images section below should consist of comma separated
+	# menu entries with the following template:
+	#	{
+	#		"character" : "bugs",
+	#		"name": "Carrot Juice", 
+	#		"ingredients": "Ginger Beer, Vodka, Carrot Juice, Lime, Angostura Bitters",
+	#		"price": "$2.75",
+	#		"available": true
+	#	}
+	#
+	# character	: A character icon, from the list below
+	# name			: The name of the drink
+	# ingredients	: List of ingredients to display
+	# price		: Price of the drink
+	# available	: true, to display the item. false to ignore it
+	#
+	# Below is a list of available character icons:
+	# ----------------------
+	# bugs, coyote, daffy, elmer, foghorn, frog, lola, marvin,
+	# pepe, porky, roadrunner, speedy, sylvester, taz, tweety
 
-	// If this is set, use the remote file instead
-	// of the contents of this configuration file.
-	// Allows you to edit the configuration online.
-	// Remove the Double slashes to enable it.
-	// "remote_config": "",
+	# If this is set, use the remote file instead
+	# of the contents of this configuration file.
+	# Allows you to edit the configuration online.
+	# Remove the Double slashes to enable it.
+	# "remote_config": "",
 
 	"configuration": {
-		// General options
+		# General options
 		"image_directory"			: "logos_1080p",
 		"screen_resolution"			: [1080, 1920],
 		"image_padding_size"		: 10,
 
-		// Page options
+		# Page options
 		"page_change_interval_ms"	: 5000,
 		"config_reload_interval_ms"	: 180000,
 		"items_per_page"			: 8,
 
-		// Text options
+		# Text options
 		"text_font_sizes"			: [28, 16, 16],
 		"text_font"					: "Helvetica",
 		"text_font_bold"			: true,
@@ -48,7 +48,7 @@
 		"text_shadow_size"			: 3,
 		"text_border_size"			: 1,
 
-		// Background colours
+		# Background colours
 		"background": "#73c850",
 		"colours": [
 			"#663399",
@@ -61,9 +61,9 @@
 
 	"images":
 	[
-		// ------------------------
-		// -------- Page 1 --------
-		// ------------------------
+		# ------------------------
+		# -------- Page 1 --------
+		# ------------------------
 		{
 			"character" : "bugs",
 			"name": "Carrot Juice", 
@@ -121,9 +121,9 @@
 			"available": true
 		},
 
-		// ------------------------
-		// -------- Page 2 --------
-		// ------------------------
+		# ------------------------
+		# -------- Page 2 --------
+		# ------------------------
 		{
 			"character": "roadrunner",
 			"name": "Blueberry Speedster", 

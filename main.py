@@ -16,7 +16,7 @@ import re
 
 def load_json(text):
 	""" Load unicode JSON, removing comments """
-	text = re.sub(ur'[ \t]*//[^\n]*\n', u'', text)
+	text = re.sub(ur'[ \t]*#[^\n]*\n', u'', text)
 	return json.loads(unicode(text))
 
 def rotate(l, n):
