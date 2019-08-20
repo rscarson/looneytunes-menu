@@ -3,4 +3,7 @@
 # Start the menu board           #
 # Copyright Richard Carson, 2019 #
 ##################################
-python main.py
+(
+  cd /home/pi/looneytunes-menu
+  python main.py
+)

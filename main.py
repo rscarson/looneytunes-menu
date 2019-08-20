@@ -49,6 +49,7 @@ class MenuBoard:
 
 		# Prepare the canvas
 		self.root.attributes("-fullscreen", True)
+		self.root.config(cursor="none")
 		self.canvas = Tkinter.Canvas(self.root, bd=0, highlightthickness=0, background=self.options['background'])
 		self.canvas.pack(fill=Tkinter.BOTH, expand=1)
 
