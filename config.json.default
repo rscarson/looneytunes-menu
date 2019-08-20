@@ -49,7 +49,7 @@
 		"text_border_size"			: 1,
 
 		## Background colours
-		"background": "##73c850",
+		"background": "#73c850",
 		"colours": [
 			"#663399",
 			"#CC0000",

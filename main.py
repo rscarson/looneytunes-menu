@@ -16,7 +16,7 @@ import re
 
 def load_json(text):
 	""" Load unicode JSON, removing comments """
-	text = re.sub(ur'[ \t]*##[^\n]*\n', u'', text)
+	text = re.sub(ur'[ \t]*//[^\n]*\n', u'', text)
 	return json.loads(unicode(text))
 
 def rotate(l, n):
@@ -56,14 +56,15 @@ class MenuBoard:
 	def reload_config(self):
 		""" Load configuration """
 		with codecs.open(self.config_filename, 'r', encoding='utf8') as f:
-			config = load_json(f.read())
+			config_contents = f.read()
+			config = load_json(config_contents)
 			if 'remote_config' in config.keys():
 				try:
 					config = urllib2.urlopen(config['remote_config']).read()
 					config = load_json(config)
 				except:
 					print "Error loading target URL... Using local config"
-					config = load_json(f.read())
+					config = load_json(config_contents)
 			self.options = config['configuration']
 			images = [i for i in config['images'] if i['available']]
 			self.pages = paginate(images, self.options['items_per_page'])
